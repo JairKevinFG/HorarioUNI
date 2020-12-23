@@ -16,29 +16,6 @@ window.onload = () => {
 };
 
 
-class Horario {
-    constructor() {
-
-    }
-    agregarHorario(){
-
-    }
-    eliminar
-
-}
-
-class UI {
-
-
-
-
-
-}
-
-
-
-
-
 function closeModal (){
     modal.removeAttribute('open')
 }
@@ -94,12 +71,20 @@ async function mostrarSecciones(curso){
         const documentoParrafo = document.createElement('p')
         documentoParrafo.innerHTML = `<span class="font-weight-bolder">DNI: </span> ${documento}`;
 
-        const seccionParrafo = document.createElement('div')
-        seccionParrafo.innerHTML = `<input class="form-check-input" type="checkbox" name="seccion"  value=${seccion} >
-        <label class="form-check-label">
-        ${seccion}
-        </label>`;
+        const seccionParrafo = document.createElement('p')
+        seccionParrafo.innerHTML = `<span class="font-weight-bolder">Sección: </span> ${seccion}`
 
+        const agregar = document.createElement('div');
+        agregar.classList.add('agregar')
+        agregar.href = "#"
+        agregar.innerHTML = '<img  style=" height : 20px" src="./add.svg" alt=""> ';
+
+        agregar.onclick = () => {
+            agregar.innerHTML = 'agregado';
+            agregarHorario(horarios)
+        }
+
+        divCol.appendChild(agregar)
         divCol.appendChild(seccionParrafo);
         divCol.appendChild(docenteParrafo);
         divCol.appendChild(documentoParrafo);
@@ -109,7 +94,6 @@ async function mostrarSecciones(curso){
 
         horarios.forEach((horario) => {
             const {tipo , dia , inicio , final , aula} = horario
-
             const divHorario = document.createElement('div');
             divHorario.classList.add(`col-${12/horarios.length}`)
 
@@ -139,7 +123,6 @@ async function mostrarSecciones(curso){
         })
         divCol.appendChild(divRow2)
         divRow.appendChild(divCol);
-        //agregar el boton para enviar el curso
 
     })
 
@@ -153,3 +136,10 @@ async function mostrarSecciones(curso){
 
 }
 
+function agregarHorario(horario){
+    const boton = document.querySelector('.agregar');
+    boton.onclick = () => {
+        boton.innerHTML = '<img  style=" height : 20px" src="./add.svg" alt=""> ';
+    }
+    console.log(horario)
+}
