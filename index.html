@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario UNI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+      <div class="container">
+          <h1>HORARIO UNI</h1>
+
+          <input id="inputCurso" class="mr-sm-2" type="text" placeholder="Nombre de curso o codigo" >
+
+          <div class="row mt-5">
+              <div class="col-md-4" >
+                  <ul id="list-cursos">
+
+                  </ul>
+              </div>
+              <div class="col-md-8">
+                    <table class="table table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">Hora</th>
+                            <th scope="col">Lunes</th>
+                            <th scope="col">Martes</th>
+                            <th scope="col">Miercoles</th>
+                            <th scope="col">Jueves</th>
+                            <th scope="col">Viernes</th>
+                            <th scope="col">Sabado</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr >
+                            <th scope="row"> 8:00 : 10:00</th>
+                          </tr>
+                          <tr>
+                            <th scope="row"> 10:00 : 12:00</th>
+                          </tr>
+                          <tr>
+                            <th scope="row">12:00-14:00</th>
+                          </tr>
+                          <tr>
+                            <th scope="row"> 14:00 : 16:00</th>
+                          </tr>
+                          <tr>
+                            <th scope="row"> 16:00 : 18:00</th>
+                          </tr>
+                          <tr>
+                            <th scope="row"> 18:00 : 20:00</th>
+                          </tr>
+                          <tr>
+                            <th scope="row"> 20:00 : 22:00</th>
+                          </tr>
+                        </tbody>
+                    </table>
+              </div>
+        </div>
+      </div>
+
+
+      <dialog id="modal">
+        <form id="formSecciones" >
+
+          <div class="modal-content container">
+
+          </div>
+            <button class="btn btn-success"  id="close" type="submit">Guardar</button>
+
+        </form>
+
+      </dialog>
+
+
+</body>
+<script src="./main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</html>

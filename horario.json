@@ -1,0 +1,141 @@
+[
+  {
+    "codigo": "BEF01",
+    "nombre": "Introducción a la computación",
+    "secciones": [
+      {
+        "seccion": "U",
+        "horarios": [
+          {
+            "tipo": "Teoría",
+            "dia": "Lunes",
+            "inicio": "8:00",
+            "final": "9:00",
+            "aula": "Lab-A"
+          },
+          {
+            "tipo": "Práctica",
+            "dia": "Lunes",
+            "inicio": "9:00",
+            "final": "11:00",
+            "aula": "Lab-A"
+          }
+        ],
+        "docente": "CORDOVA NERI,TEODORO LUCIANO",
+        "documento": "07733247",
+        "vacantes": 25
+      },
+      {
+        "seccion": "V",
+        "horarios": [
+          {
+            "tipo": "Práctica",
+            "dia": "Martes",
+            "inicio": "9:00",
+            "final": "11:00",
+            "aula": "Lab-O"
+          },
+          {
+            "tipo": "Teoría",
+            "dia": "Lunes",
+            "inicio": "8:00",
+            "final": "9:00",
+            "aula": "Lab-O"
+          }
+        ],
+        "docente": "HANCCO CARPIO,RONY JORDAN",
+        "documento": "42231841",
+        "vacantes": 25
+      },
+      {
+        "seccion": "W",
+        "horarios": [
+          {
+            "tipo": "Teoría",
+            "dia": "Lunes",
+            "inicio": "13:00",
+            "final": "14:00",
+            "aula": "Lab-O"
+          },
+          {
+            "tipo": "Práctica",
+            "dia": "Lunes",
+            "inicio": "14:00",
+            "final": "16:00",
+            "aula": "Lab-O"
+          }
+        ],
+        "docente": "CABALLERO ORTIZ,JOSE ALBERTO",
+        "documento": "43658083",
+        "vacantes": 25
+      }
+    ]
+  },
+  {
+    "codigo": "BMA01",
+    "nombre": "Cálculo diferencial",
+    "secciones": [
+      {
+        "seccion": "U",
+        "horarios": [
+            {
+            "tipo": "Teoría",
+            "dia": "Lunes",
+            "inicio": "10:00",
+            "final": "12:00",
+            "aula": "S4-204"
+          },
+          {
+            "tipo": "Teoría",
+            "dia": "Miercoles",
+            "inicio": "8:00",
+            "final": "10:00",
+            "aula": "S4-205"
+          },
+          {
+            "tipo": "Práctica",
+            "dia": "Viernes",
+            "inicio": "8:00",
+            "final": "10:00",
+            "aula": "S4-205"
+          }
+        ],
+        "docente": "BERMEO CARRASCO,OSMAR ARNALDO",
+        "documento": "10312636",
+        "vacantes": 10
+      },
+      {
+        "seccion": "V",
+        "horarios": [
+          {
+            "tipo": "Teoría",
+            "dia": "Martes",
+            "inicio": "8:00",
+            "final": "10:00",
+            "aula": "S4-112"
+          },
+          {
+            "tipo": "Práctica",
+            "dia": "Miercoles",
+            "inicio": "12:00",
+            "final": "14:00",
+            "aula": "S4-105"
+          },
+           {
+            "tipo": "Teoría",
+            "dia": "Jueves",
+            "inicio": "16:00",
+            "final": "18:00",
+            "aula": "S4-112"
+          }
+        ],
+        "docente": "HUAMAN SANCHEZ,ALEJANDRO APOLINARIO",
+        "documento": "6954147",
+        "vacantes": 25
+      }
+    ]
+  }
+
+
+
+]
